@@ -10,3 +10,6 @@
    UserController: crud basic for profile
    AuthController: login, logout, register, reset password, forgot password
 4. route write in api.php
+5. jwt - json web token
+   run: composer require tymon/jwt-auth
+   run: php artisan install:api

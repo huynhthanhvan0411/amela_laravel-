@@ -15,3 +15,10 @@ Route::get('/profile/{id}', [UserController::class, 'show']);
 Route::post('/create-profile', [UserController::class, 'store']);
 Route::put('/update-profile/{id}', [UserController::class, 'update']);
 Route::delete('/delete-profile/{id}', [UserController::class, 'destroy']);
+
+// auth
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::post('/refresh', [AuthController::class, 'refresh']);
+Route::post('/me', [AuthController::class, 'me']);
